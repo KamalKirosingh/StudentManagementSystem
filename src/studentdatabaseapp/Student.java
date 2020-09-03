@@ -58,6 +58,6 @@ public class Student {
         System.out.println("ENROLLED IN: " + courses);
         System.out.println("TUITION BALANCE: " + tuitionBalance);
     }
-
+//test
 
 }
