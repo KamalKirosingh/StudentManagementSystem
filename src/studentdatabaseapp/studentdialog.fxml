@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="studentdatabaseapp.DialogController">
+    <headerText>
+        Fill in the information for the Student
+    </headerText>
+    <content>
+        <GridPane vgap="10" hgap="10">
+            <Label text="First name" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <TextField fx:id="firstNameTextField" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+            <Label text="Last name" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+            <TextField fx:id="lastNameTextField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+            <Label text="Year" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+            <TextField fx:id="yearTextField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+            <Label text="Course" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+            <TextField fx:id="courseTextField" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+        </GridPane>
+    </content>
+</DialogPane>
