@@ -29,12 +29,20 @@ public class Student {
         return firstName.get();
     }
 
+    public SimpleStringProperty firstNameProperty() {
+        return firstName;
+    }
+
     public void setFirstName(String firstName) {
         this.firstName.set(firstName);
     }
 
     public String getLastName() {
         return lastName.get();
+    }
+
+    public SimpleStringProperty lastNameProperty() {
+        return lastName;
     }
 
     public void setLastName(String lastName) {
@@ -45,6 +53,10 @@ public class Student {
         return schoolYear.get();
     }
 
+    public SimpleStringProperty schoolYearProperty() {
+        return schoolYear;
+    }
+
     public void setSchoolYear(String schoolYear) {
         this.schoolYear.set(schoolYear);
     }
@@ -53,6 +65,9 @@ public class Student {
         return course.get();
     }
 
+    public SimpleStringProperty courseProperty() {
+        return course;
+    }
     public void setCourse(String course) {
         this.course.set(course);
     }

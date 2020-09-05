@@ -14,7 +14,6 @@ public class DialogController {
     @FXML
     private TextField courseTextField;
 
-    @FXML
     public Student processResults() {
         String firstName = firstNameTextField.getText();
         String lastName = lastNameTextField.getText();
@@ -24,15 +23,14 @@ public class DialogController {
         return new Student(firstName, lastName, year, course);
 
     }
-    @FXML
+
     public void editStudent(Student student) {
-        student.setFirstName(firstNameTextField.getText());
-        student.setLastName(lastNameTextField.getText());
-        student.setSchoolYear(yearTextField.getText());
-        student.setCourse(courseTextField.getText());
+        firstNameTextField.setText(student.getFirstName());
+        lastNameTextField.setText(student.getLastName());
+        yearTextField.setText(student.getSchoolYear());
+        courseTextField.setText(student.getCourse());
     }
 
-    @FXML
     public void updateStudent(Student student) {
         student.setFirstName(firstNameTextField.getText());
         student.setLastName(lastNameTextField.getText());

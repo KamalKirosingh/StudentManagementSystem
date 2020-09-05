@@ -105,12 +105,12 @@ public class Controller {
             dialog.getDialogPane().getButtonTypes().add(ButtonType.OK);
             dialog.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
 
-            DialogController studentController = fxmlLoader.getController();
-            studentController.editStudent(editStudent);
+            DialogController controller = fxmlLoader.getController();
+           controller.editStudent(editStudent);
 
             Optional<ButtonType> result = dialog.showAndWait();
             if (result.isPresent() && result.get() == ButtonType.OK) {
-                studentController.updateStudent(editStudent);
+                controller.updateStudent(editStudent);
                 data.saveStudent();
             }
         }
